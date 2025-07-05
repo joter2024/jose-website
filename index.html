@@ -1,25 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Jose | Personal Website</title>
+  <meta charset="UTF-8">
+  <title>Jose Ferreira | Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      background-color: #f2f2f2;
+      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 50px;
+      background: #f7f7f7;
       color: #333;
+      text-align: center;
+      padding: 40px 20px;
     }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    img.profile {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
     h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
+      margin-top: 0;
     }
-    p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
+
     a.button {
       display: inline-block;
+      margin: 10px;
       padding: 12px 24px;
       background-color: #007bff;
       color: white;
@@ -27,39 +43,43 @@
       border-radius: 5px;
       font-weight: bold;
     }
+
     a.button:hover {
       background-color: #0056b3;
     }
-    img {
-      margin-top: 30px;
-      width: 200px;
-      border-radius: 100px;
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #888;
     }
- </style>
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      a.button {
+        display: block;
+        margin: 10px auto;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hi, I'm Jose 👋</h1>
-  <p>Welcome to my personal website. I'm learning to build websites and growing my skills every day.</p>
+  <div class="container">
+    <img src="https://via.placeholder.com/150" alt="Jose's Profile Photo" class="profile">
+    <h1>Hi, I'm Jose 👋</h1>
+    <p>Welcome to my personal website. I'm learning to build websites and growing my skills every day.</p>
 
- <p>
-  <a class="button" href="https://github.com/joter2024" target="_blank">
-    Visit My GitHub
-  </a>
-</p>
+    <a class="button" href="https://github.com/joter2024" target="_blank">Visit My GitHub</a>
+    <a class="button" href="https://codepen.io/Jose-Ferreira-Jferre/full/pvvWxgw" target="_blank">🌦️ Weather Tracker</a>
+    <a class="button" href="https://codepen.io/Jose-Ferreira-Jferre/full/yyLgdWO" target="_blank">📅 Calendar</a>
+    <a class="button" href="blog.html">📝 My Blog</a>
 
-<p>
-  <a class="button" href="https://codepen.io/Jose-Ferreira-Jferre/full/pvvWxgw" target="_blank">
-    🌦️ View My Weather Tracker
-  </a>
-</p>
-
-<p>
-  <a class="button" href="https://codepen.io/Jose-Ferreira-Jferre/full/yyLgdWO" target="_blank">
-  📅 View My Calendar
- </a>
-</p>
-
-  <img src="https://via.placeholder.com/200" alt="Profile picture">
+    <footer>
+      &copy; 2025 Jose Ferreira
+    </footer>
+  </div>
 </body>
 </html>
-
