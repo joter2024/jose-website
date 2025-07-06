@@ -12,14 +12,42 @@
       background: #f7f7f7;
       color: #333;
       text-align: center;
-      padding: 40px 20px;
+    }
+
+    nav {
+      background-color: #007bff;
+      padding: 12px 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .container {
       max-width: 700px;
-      margin: auto;
+      margin: 40px auto;
       background: #fff;
-      padding: 40px;
+      padding: 40px 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
@@ -61,6 +89,15 @@
         padding: 20px;
       }
 
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav li {
+        margin: 8px 0;
+      }
+
       a.button {
         display: block;
         margin: 10px auto;
@@ -69,21 +106,34 @@
   </style>
 </head>
 <body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="projects.html">🚀 Projects</a></li>
+        <li><a href="blog.html">📝 Blog</a></li>
+        <li><a href="https://github.com/joter2024" target="_blank">💻 GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
   <div class="container">
-   
     <img src="jose.jpg" alt="Jose's Profile Photo" class="profile">
     <h1>Hi, I'm Jose 👋</h1>
     <p>Welcome to my personal website. I'm learning to build websites and growing my skills every day.</p>
 
-    <a class="button" href="https://github.com/joter2024" target="_blank">Visit My GitHub</a>
     <a class="button" href="https://codepen.io/Jose-Ferreira-Jferre/full/pvvWxgw" target="_blank">🌦️ Weather Tracker</a>
     <a class="button" href="https://codepen.io/Jose-Ferreira-Jferre/full/yyLgdWO" target="_blank">📅 Calendar</a>
-    <a class="button" href="blog.html">📝 My Blog</a>
     <a class="button" href="projects.html">🚀 View My Projects</a>
+    <a class="button" href="blog.html">📝 My Blog</a>
 
     <footer>
       &copy; 2025 Jose Ferreira
     </footer>
   </div>
+
 </body>
 </html>
