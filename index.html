@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Jose Ferreira | Web Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jose Ferreira's personal portfolio and projects.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jose Ferreira's personal portfolio and projects." />
   <style>
     body {
       margin: 0;
@@ -12,42 +12,26 @@
       background: #f7f7f7;
       color: #333;
       text-align: center;
+      padding: 40px 20px;
     }
 
-    nav {
+    .navbar {
       background-color: #007bff;
-      padding: 12px 0;
+      padding: 10px 0;
     }
 
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav li {
-      margin: 0 15px;
-    }
-
-    nav a {
+    .navbar a {
       color: white;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
-      font-size: 16px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
     }
 
     .container {
       max-width: 700px;
-      margin: 40px auto;
+      margin: auto;
       background: #fff;
-      padding: 40px 20px;
+      padding: 40px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
@@ -60,6 +44,21 @@
 
     h1 {
       margin-top: 0;
+    }
+
+    .about {
+      text-align: left;
+      margin: 30px 0;
+    }
+
+    .about h2 {
+      font-size: 1.5em;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .about p {
+      line-height: 1.6;
     }
 
     a.button {
@@ -89,41 +88,42 @@
         padding: 20px;
       }
 
-      nav ul {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      nav li {
-        margin: 8px 0;
-      }
-
       a.button {
         display: block;
         margin: 10px auto;
+      }
+
+      .about {
+        text-align: center;
       }
     }
   </style>
 </head>
 <body>
+  <div class="navbar">
+    <a href="index.html">🏠 Home</a>
+    <a href="projects.html">🚀 Projects</a>
+    <a href="blog.html">📘 Blog</a>
+    <a href="https://github.com/joter2024" target="_blank">💻 GitHub</a>
+  </div>
 
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">🏠 Home</a></li>
-        <li><a href="projects.html">🚀 Projects</a></li>
-        <li><a href="blog.html">📝 Blog</a></li>
-        <li><a href="https://github.com/joter2024" target="_blank">💻 GitHub</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Main Content -->
   <div class="container">
-    <img src="jose.jpg" alt="Jose's Profile Photo" class="profile">
+    <img src="jose.jpg" alt="Jose's Profile Photo" class="profile" />
     <h1>Hi, I'm Jose 👋</h1>
     <p>Welcome to my personal website. I'm learning to build websites and growing my skills every day.</p>
+
+    <!-- ✅ About Me Section -->
+    <div class="about">
+      <h2>👨‍💻 About Me</h2>
+      <p>
+        I'm a passionate and self-taught web developer who enjoys creating websites and exploring new technologies.
+        My goal is to build professional, accessible, and user-friendly web applications that solve real problems.
+      </p>
+      <p>
+        I’m currently working on several projects while continuously improving my frontend skills — including HTML, CSS, JavaScript, and GitHub.
+        This site is both my learning space and digital portfolio. Thanks for visiting!
+      </p>
+    </div>
 
     <a class="button" href="https://codepen.io/Jose-Ferreira-Jferre/full/pvvWxgw" target="_blank">🌦️ Weather Tracker</a>
     <a class="button" href="https://codepen.io/Jose-Ferreira-Jferre/full/yyLgdWO" target="_blank">📅 Calendar</a>
@@ -134,6 +134,5 @@
       &copy; 2025 Jose Ferreira
     </footer>
   </div>
-
 </body>
 </html>
