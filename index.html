@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Jose Ferreira | Web Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Jose Ferreira's personal portfolio and projects." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jose Ferreira's personal portfolio and projects.">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: #f7f7f7;
       color: #333;
-      text-align: center;
-      padding: 40px 20px;
     }
 
+    /* Navbar */
     .navbar {
       background-color: #007bff;
-      padding: 10px 0;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
     }
 
     .navbar a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
       font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
     }
 
     .container {
@@ -34,6 +42,7 @@
       padding: 40px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
     }
 
     img.profile {
@@ -44,21 +53,7 @@
 
     h1 {
       margin-top: 0;
-    }
-
-    .about {
-      text-align: left;
-      margin: 30px 0;
-    }
-
-    .about h2 {
-      font-size: 1.5em;
-      color: #007bff;
-      margin-bottom: 10px;
-    }
-
-    .about p {
-      line-height: 1.6;
+      font-size: 2em;
     }
 
     a.button {
@@ -77,6 +72,21 @@
       background-color: #0056b3;
     }
 
+    .about {
+      text-align: left;
+      margin: 40px 0 20px;
+    }
+
+    .about h2 {
+      font-size: 1.5em;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .about p {
+      line-height: 1.6;
+    }
+
     footer {
       margin-top: 40px;
       font-size: 14px;
@@ -93,22 +103,26 @@
         margin: 10px auto;
       }
 
-      .about {
-        text-align: center;
+      .navbar {
+        flex-direction: column;
+        gap: 10px;
       }
     }
   </style>
 </head>
 <body>
+
+  <!-- ✅ Navigation Bar -->
   <div class="navbar">
     <a href="index.html">🏠 Home</a>
     <a href="projects.html">🚀 Projects</a>
-    <a href="blog.html">📘 Blog</a>
+    <a href="blog.html">📑 Blog</a>
     <a href="https://github.com/joter2024" target="_blank">💻 GitHub</a>
   </div>
 
+  <!-- ✅ Main Content -->
   <div class="container">
-    <img src="jose.jpg" alt="Jose's Profile Photo" class="profile" />
+    <img src="jose.jpg" alt="Jose's Profile Photo" class="profile">
     <h1>Hi, I'm Jose 👋</h1>
     <p>Welcome to my personal website. I'm learning to build websites and growing my skills every day.</p>
 
@@ -116,15 +130,14 @@
     <div class="about">
       <h2>👨‍💻 About Me</h2>
       <p>
-        I'm a passionate and self-taught web developer who enjoys creating websites and exploring new technologies.
-        My goal is to build professional, accessible, and user-friendly web applications that solve real problems.
+        I'm a passionate self-taught web developer. I enjoy building responsive, modern websites and continuously learning new web technologies.
       </p>
       <p>
-        I’m currently working on several projects while continuously improving my frontend skills — including HTML, CSS, JavaScript, and GitHub.
-        This site is both my learning space and digital portfolio. Thanks for visiting!
+        My goal is to create clean, accessible web apps that solve real-world problems and make the internet better.
       </p>
     </div>
 
+    <!-- ✅ Buttons -->
     <a class="button" href="https://codepen.io/Jose-Ferreira-Jferre/full/pvvWxgw" target="_blank">🌦️ Weather Tracker</a>
     <a class="button" href="https://codepen.io/Jose-Ferreira-Jferre/full/yyLgdWO" target="_blank">📅 Calendar</a>
     <a class="button" href="projects.html">🚀 View My Projects</a>
@@ -134,5 +147,6 @@
       &copy; 2025 Jose Ferreira
     </footer>
   </div>
+
 </body>
 </html>
